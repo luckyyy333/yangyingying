@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI计算</title>
+</head>
+<body>
+    <script>
+        let weight = prompt("请输入您的体重（单位：kg）：")
+        let height = prompt("请输入您的身高（单位：m）：")
+        weight = parseFloat(weight);
+        height = parseFloat(height);
+        let bmi = weight/(height * height);
+        console.log("您的BMI值为："+ bmi.toFixed(2));
+        alert("您的BMI值为："+ bmi.toFixed(2));
+        confirm("您的BMI值为："+ bmi.toFixed(2) + ",yes or no ?");
+    </script>
+</body>
+</html>
